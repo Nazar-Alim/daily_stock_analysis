@@ -68,13 +68,13 @@ jobs:
           LITELLM_MODEL: ${{ vars.LITELLM_MODEL || secrets.LITELLM_MODEL }}
 
           # Gemini AI（主选）
-          GEMINI_API_KEY: ${{ AIzaSyA7a79EKgnrqtWE-b5r080O9McIiQ3cqS0 }}
+          GEMINI_API_KEY: ${{AIzaSyA7a79EKgnrqtWE-b5r080O9McIiQ3cqS0}}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || secrets.GEMINI_MODEL || 'gemini-3-flash-preview' }}
           GEMINI_MODEL_FALLBACK: ${{ vars.GEMINI_MODEL_FALLBACK || secrets.GEMINI_MODEL_FALLBACK || 'gemini-2.5-flash' }}
           GEMINI_REQUEST_DELAY: '3.0'
           
           # AIHubMix（优先于 OPENAI_API_KEY，自动适配 base_url，推荐国内用户）
-          AIHUBMIX_KEY: ${{ sk-94LrW72kRWnylkKFF5Cb0cD0108f4bD598F189E34b725dDd }}
+          AIHUBMIX_KEY: ${{sk-94LrW72kRWnylkKFF5Cb0cD0108f4bD598F189E34b725dDd}}
 
           # OpenAI 兼容 API（备选）
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -88,7 +88,7 @@ jobs:
           # ==========================================
           # 数据源
           # ==========================================
-          TUSHARE_TOKEN: ${{ 14055e7375e8e57a6cadaa76f426f1446e4c34491ff5d24efd5cb7e1 }}
+          TUSHARE_TOKEN: ${{14055e7375e8e57a6cadaa76f426f1446e4c34491ff5d24efd5cb7e1}}
           
           # ==========================================
           # 搜索服务
@@ -110,7 +110,7 @@ jobs:
           WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
-          FEISHU_WEBHOOK_URL: ${{ https://www.feishu.cn/flow/api/trigger-webhook/8b126825b395e6e97c15510ee0a04aa8 }}
+          FEISHU_WEBHOOK_URL: ${{https://www.feishu.cn/flow/api/trigger-webhook/8b126825b395e6e97c15510ee0a04aa8}}
           
           # 方式三：Telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
